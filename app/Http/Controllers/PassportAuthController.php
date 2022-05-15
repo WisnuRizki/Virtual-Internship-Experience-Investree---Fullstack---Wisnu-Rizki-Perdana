@@ -7,6 +7,9 @@ class PassportAuthController extends Controller
     /**
      * Registration
      */
+    public function getLoginView(){
+        return view('login');
+    }
     public function register(Request $request)
     {
         $this->validate($request, [
